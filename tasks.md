@@ -1,6 +1,7 @@
 ## Geet
 1. Add Log4J to the project 
 2. Create log4j2.xml file to create roating log files.
+3. Practice Git command
 
 ## Simar 
 1. Update pom.xml to add apache poi, extent report
