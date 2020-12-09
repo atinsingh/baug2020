@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.pragra.learning.qa</groupId>
+    <artifactId>sellframework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+<!--    Project properties  work in progress       -->
+    <properties>
+        <java.version>1.7</java.version>
+        <selenium.version>3.141.59</selenium.version>
+        <testng.version>6.14.3</testng.version>
+        <apache.poi.version>2.9.2</apache.poi.version>
+
+        <compiler.plugin.version>3.8.1</compiler.plugin.version>
+
+        <testng.xml.path>testng.xml</testng.xml.path>
+        <surefire.version>3.0.0-M5</surefire.version>
+    </properties>
+
+    <dependencies>
+        <!-- Selenium Dependecy for managing WebDriver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <!-- Test NG Dependency for test cases -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+
+        <!-- we will continue to update this section-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire Plugin-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${testng.xml.path}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
