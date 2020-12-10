@@ -4,7 +4,7 @@
 
 ## Simar 
 1. Update pom.xml to add apache poi, extent report
-
+2 practice git commands
 ## Parita
 1. list all broswers and their driver stiring like webdriver.chrome.driver
 2. all add support versions too
