@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Zoom" duration-ms="7865" started-at="2020-12-12T17:08:25Z" finished-at="2020-12-12T17:08:33Z">
+    <groups>
+    </groups>
+    <test name="ABC" duration-ms="7865" started-at="2020-12-12T17:08:25Z" finished-at="2020-12-12T17:08:33Z">
+      <class name="io.pragra.learning.framwork.testcases.HomeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:io.pragra.learning.framwork.testcases.HomeTest@69504ae9]" name="setUp" is-config="true" duration-ms="5629" started-at="2020-12-12T17:08:19Z" finished-at="2020-12-12T17:08:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="requestDemoTest()[pri:0, instance:io.pragra.learning.framwork.testcases.HomeTest@69504ae9]" name="requestDemoTest" duration-ms="7715" started-at="2020-12-12T17:08:25Z" finished-at="2020-12-12T17:08:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestDemoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:io.pragra.learning.framwork.testcases.HomeTest@69504ae9]" name="tearDown" is-config="true" duration-ms="11165" started-at="2020-12-12T17:08:33Z" finished-at="2020-12-12T17:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- io.pragra.learning.framwork.testcases.HomeTest -->
+    </test> <!-- ABC -->
+  </suite> <!-- Zoom -->
+</testng-results>

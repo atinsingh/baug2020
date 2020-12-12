@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Zoom">
+    <listeners>
+        <listener class-name="io.pragra.learning.framwork.listener.ScreenShotListener"></listener>
+    </listeners>
+    <test name="ABC">
+        <classes>
+            <class name="io.pragra.learning.framwork.testcases.HomeTest"></class>
+        </classes>
+    </test>
+</suite>

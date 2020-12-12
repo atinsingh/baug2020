@@ -26,7 +26,7 @@ public class HomeTest {
     }
 
     @Test
-    public void testName() throws InterruptedException {
+    public void requestDemoTest() throws InterruptedException {
         TopNavBarpPage  topNav = new TopNavBarpPage(driver);
         RequestDemoPage requestDemoPage = topNav.clickOnRequestDemo();
 
