@@ -13,9 +13,9 @@ public class ExcelReader {
 
       //  List<String> list = Files.readAllLines(Paths.get("C:\\Users\\Sarit\\Desktop", "QATeamMemberNames.xlsx"));
       //  list.forEach(System.out::println);
-        Path newpath = Paths.get("C:\\Users\\Sarit\\Desktop", "QATeamMemberNames.xlsx");
+        Path path = Paths.get("C:\\Users\\Sarit\\Desktop", "QATeamMemberNames.xlsx");
         Workbook workbook;
-        workbook = new XSSFWorkbook(newpath.toFile());
+        workbook = new XSSFWorkbook(path.toFile());
         Sheet sheet1 = workbook.getSheet("Names");
         Iterator<Row> rowIterator = sheet1.rowIterator();
 
