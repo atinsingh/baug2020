@@ -61,11 +61,13 @@ public class RequestDemoPage {
 
     public RequestDemoPage enterEmail(String email) {
         this.email  = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email")));
+        this.email.clear();
         this.email.sendKeys(email);
         return this;
     }
 
     public RequestDemoPage company(String company) {
+        this.company.clear();
         this.company.sendKeys(company);
         return this;
     }

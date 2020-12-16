@@ -59,4 +59,13 @@ public class CoreUtils {
         SimpleDateFormat dateFormat = new SimpleDateFormat(s[1]);
         return testCaseName+"_"+dateFormat.format(new Date())+AppConfig.getProperties("extension");
     }
+
+    public static String getReportFileName() {
+        createDirs( Paths.get( AppConfig.getProperties("report.dir") ));
+        String pattern = AppConfig.getProperties("pattern");
+        String[] s = pattern.split("_");
+        SimpleDateFormat dateFormat = new SimpleDateFormat(s[1]);
+        String fileName = "RunReport_"+dateFormat.format(new Date())+AppConfig.getProperties("report.extension");
+        return Paths.get(AppConfig.getProperties("report.dir"),fileName).toString();
+    }
 }
